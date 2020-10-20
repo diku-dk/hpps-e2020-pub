@@ -4,8 +4,25 @@
 
 HPPS takes place in block 2.  The teaching activities are based on the
 idea of [flipped
-classroom](https://en.wikipedia.org/wiki/Flipped_classroom), which
-concretely means... TBA
+classroom](https://en.wikipedia.org/wiki/Flipped_classroom), where
+the lectures are shorter and available as self-study videos, and 
+the lecture time is instead used to solve and discuss problems.
+
+Since we are teaching remotely this year, we have three different
+kinds of teaching sessions: videos, lectures and practials.
+
+The videos are available in advance, and must be viewed before
+attending the lectures. The videos stay available throughout the course
+so you are free to (re-)view them whenever it suits you.
+
+In the lectures we will focus on solving concrete problems in small
+virtual groups. The problems are usually related to the mandatory
+assignments. After each sub-problem we will gather and discuss the
+challenges, pitfalls and strategies for the problem.
+
+As the exam will be a written exam, the practical sessions
+will be focused on solving problems similar to those that
+will be used in the exam.
 
 TODO: link course outline PDF here (or somewhere more prominently).
 
