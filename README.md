@@ -38,6 +38,28 @@ The textbooks are as follows:
 
 * Course notes that are yet unpublished.
 
+## Schedule
+
+The **labs** take place on
+
+* Tuesday 10:15-12:00
+
+* Thursday 13:15-15:00
+
+The **exercise classes** take place on
+
+* Thursday 15:15-17:00
+
+Once we know whether we will be allowed to meet physically, we will
+add this information.
+
+## Discord
+
+Virtual labs and exercise classes take place on [this Discord
+server](https://discord.com/channels/768764206383366185/).  Note that
+teachers and TAs are only expected to respond during normal class
+hours.
+
 ## Assignments
 
 There are 4 assignment in total during the course with deadline
