@@ -8,23 +8,35 @@ classroom](https://en.wikipedia.org/wiki/Flipped_classroom), where
 the lectures are shorter and available as self-study videos, and 
 the lecture time is instead used to solve and discuss problems.
 
-Since we are teaching remotely this year, we have three different
-kinds of teaching sessions: videos, lectures and practials.
+Since we are teaching remotely this year, we have two kinds of
+teaching sessions: **labs** and **exercise classes**.  You will be
+assigned **videos** and **reading**.
 
 The videos are available in advance, and must be viewed before
 attending the lectures. The videos stay available throughout the course
 so you are free to (re-)view them whenever it suits you.
 
-In the lectures we will focus on solving concrete problems in small
-virtual groups. The problems are usually related to the mandatory
-assignments. After each sub-problem we will gather and discuss the
-challenges, pitfalls and strategies for the problem.
+In the **labs** we will focus on solving concrete problems in small
+virtual groups (or physically, as the pandemic and KU permits). The
+problems are usually related to the mandatory assignments. After each
+sub-problem we will gather and discuss the challenges, pitfalls and
+strategies for the problem.
 
-As the exam will be a written exam, the practical sessions
-will be focused on solving problems similar to those that
-will be used in the exam.
+As the exam will be a written exam, the **exercise sessions** will be
+focused on solving problems similar to those that will be used in the
+exam.
 
 TODO: link course outline PDF here (or somewhere more prominently).
+
+## Textbook
+
+The textbooks are as follows:
+
+* [Computer Systems: A Programmer's Perspective, 3rd edition](https://csapp.cs.cmu.edu/)
+
+* [Modern C](https://modernc.gforge.inria.fr/) ([CC-licensed PDF](https://gforge.inria.fr/frs/download.php/latestfile/5298/ModernC.pdf))
+
+* Course notes that are yet unpublished.
 
 ## Assignments
 
