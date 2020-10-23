@@ -56,9 +56,9 @@ add this information.
 ## Discord
 
 Virtual labs and exercise classes take place on [this Discord
-server](https://discord.com/channels/768764206383366185/).  Note that
-teachers and TAs are only expected to respond during normal class
-hours.
+server](https://discord.com/channels/768764206383366185/) ([invite
+link](https://discord.gg/KdXMA3v)).  Note that teachers and TAs are
+only expected to respond during normal class hours.
 
 ## Assignments
 
