@@ -99,6 +99,11 @@ the specific teacher or TA.
 
 You will be mainly be programming in **C** and **Python**.
 
+## Software
+
+You will be using a Unix command line and Unix tools for much of the
+course.  [See the Unix software guide.](unix.md)
+
 ## People
 
 The teachers are
