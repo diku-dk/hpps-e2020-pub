@@ -108,7 +108,7 @@ The teachers are
 
 The TAs are
 
-* Giorgos Garidis (<dpv246@alumni.ku.dk>)
+* Georgios Garidis (<dpv246@alumni.ku.dk>)
 
 * Laurent Lindpointner (<xrw514@alumni.ku.dk>)
 
