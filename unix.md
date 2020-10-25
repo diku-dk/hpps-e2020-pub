@@ -57,7 +57,7 @@ GDB (a C debugger) is tricky to get working on macOS.  Instead, you
 should use LLDB (`lldb`), which has equivalent functionality for our
 purposes, and almost the same commands.  [See this GDB to LLDB command
 map](https://lldb.llvm.org/use/map.html), and note that you likely
-need only a small fraction of these commands for CompSys.
+need only a small fraction of these commands for HPPS.
 
 ### Valgrind
 
