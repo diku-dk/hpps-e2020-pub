@@ -111,9 +111,15 @@ and which will then print a human-readable description of the data
 
 #### Hints
 
-The data array produced by the `read_points()` function is essentially
-a two-dimensional *n✕d* array in row-major order.  To access position
-*(i,j)* in a *n✕d* array, we use the formula *i✕d+j*.
+* You will need to link `io.o` (which is produced from `io.c` in the
+  handed-out `Makefile`) with `printpoints` - just pass it on the
+  command line, or (ideally) in the `Makefile` rule you write for
+  `printpoints`.
+
+* The data array produced by the `read_points()` function is
+  essentially a two-dimensional *n✕d* array in row-major order.  To
+  access position *(i,j)* in a *n✕d* array, we use the formula
+  *i✕d+j*.
 
 ### Testing index reading
 
