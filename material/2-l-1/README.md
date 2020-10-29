@@ -167,6 +167,13 @@ integer.
 
   5. Else the character is invalid, and then parsing fails.
 
+* To convert an ASCII character `c` corresponding to a digit, to the
+  integer representing that digit, do `c - '0'`.  For example,
+
+  ```C
+  '7' - '0' == 7
+  ```
+
 * To open a file for writing, use `fopen(filename, "w")`.
 
 * To write a raw binary integer `x` to an open file `f`, use
