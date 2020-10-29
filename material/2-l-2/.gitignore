@@ -1,0 +1,5 @@
+*.o
+genpoints
+printpoints
+verifyindexes
+genindexes
