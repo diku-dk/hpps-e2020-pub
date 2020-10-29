@@ -10,7 +10,7 @@ struct sort_env {
   double *points;
 };
 
-int cmp_indexes(int *ip, int *jp, struct sort_env* env) {
+int cmp_indexes(const int *ip, const int *jp, struct sort_env* env) {
   int i = *ip;
   int j = *jp;
   double *x = &env->points[i*env->d];

@@ -276,7 +276,7 @@ file (as determined by the `verifyindexes` program).
   define the comparison function as
 
   ```C
-  int cmp_indexes(int *ip, int *jp, struct sort_env* env) {
+  int cmp_indexes(const int *ip, const int *jp, struct sort_env* env) {
     ...
   }
   ```

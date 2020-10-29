@@ -4,7 +4,7 @@
 #include <stdlib.h>
 #include <assert.h>
 
-int cmp_points(double *x, double *y, int* cp) {
+int cmp_points(const double *x, const double *y, int* cp) {
   int c = *cp;
 
   if (x[c] < y[c]) {
