@@ -15,16 +15,16 @@ int main(int argc, char** argv) {
   assert(f != NULL);
 
   int n, d;
-  double *data = read_points(f, &n, &d);
-  assert(data != NULL);
+  double *points = read_points(f, &n, &d);
+  assert(points != NULL);
 
   for (int i = 0; i < n; i++) {
     printf("Point %d: ", i);
     for (int j = 0; j < d; j++) {
-      printf("%f ", data[i*d+j]);
+      printf("%f ", points[i*d+j]);
     }
     printf("\n");
   }
 
-  free(data);
+  free(points);
 }

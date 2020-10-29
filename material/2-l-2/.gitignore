@@ -3,3 +3,5 @@ genpoints
 printpoints
 verifyindexes
 genindexes
+sortpoints
+sortindexes

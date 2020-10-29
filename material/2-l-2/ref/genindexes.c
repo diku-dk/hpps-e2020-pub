@@ -23,7 +23,7 @@ int main(int argc, char** argv) {
   int n = atoi(argv[2]);
   int k = atoi(argv[3]);
 
-  assert(k < n_points);
+  assert(k <= n_points);
 
   int *indexes = malloc(n * k * sizeof(int));
 
@@ -36,10 +36,7 @@ int main(int argc, char** argv) {
       int point_idx = rand() % n_points;
 
       int skip = 0;
-      // If equal to us or already used, skip to next iteration of loop.
-      if (point_idx == i) {
-        skip = 1;
-      }
+      // If already used, skip to next iteration of loop.
       for (int j = 0; j < picked; j++) {
         if (indexes[i*k+j] == point_idx) {
           skip = 1;

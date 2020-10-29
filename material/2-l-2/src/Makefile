@@ -12,6 +12,9 @@ CFLAGS=-g -Wall -Wextra -pedantic
 io.o: io.c
 	$(CC) -c io.c $(CFLAGS)
 
+sort.o: sort.c
+	$(CC) -c sort.c $(CFLAGS)
+
 clean:
 	rm -f *.o
 
