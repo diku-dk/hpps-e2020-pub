@@ -78,6 +78,9 @@ $ ./hexabyte ints.bin
   `FILE*` object.  This function will return `0` when you have read
   the entire file.
 
+* Use `%.2x` format specifier with `printf()` to print an integer as a
+  two-digit hexadecimal number.
+
 * Use the `assert` macro from `<assert.h>` to guard against potential
   errors.
 
