@@ -38,6 +38,14 @@ The textbooks are as follows:
 
 * Course notes that are yet unpublished.
 
+### Videos
+
+The authors of the CS:APP textbook [have made videos available of ther
+lectures](https://www.youtube.com/playlist?list=PLmBgoRqEQCWy58EIwLSWwMPfkwLOLRM5R).
+Note that these lectures are from a classic systems programming
+course, with a different focus (and much longer length) than HPPS.
+However, they may still be worth watching.
+
 ## Schedule
 
 The **labs** take place on
