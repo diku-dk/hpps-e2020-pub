@@ -112,6 +112,10 @@ You will be mainly be programming in **C** and **Python**.
 You will be using a Unix command line and Unix tools for much of the
 course.  [See the Unix software guide.](unix.md)
 
+See also [this guide on the GDB
+debugger](http://beej.us/guide/bggdb/), which is a very useful tool
+for debugging C programs.
+
 ## People
 
 The teachers are
