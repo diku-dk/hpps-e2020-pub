@@ -26,8 +26,7 @@ link](https://discord.gg/KdXMA3v)).
 ## Basic setup and Unix familiarity
 
 You will need access to a Unix shell for HPPS.  Read the [Unix
-software
-guide](https://github.com/diku-dk/hpps-e2020-pub/blob/master/unix.md).
+software guide](../../unix.md).
 
 After reading and following the guide, open a terminal with a Unix
 shell.  When illustrating a shell command, we will write it like this:
