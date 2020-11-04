@@ -116,6 +116,8 @@ See also [this guide on the GDB
 debugger](http://beej.us/guide/bggdb/), which is a very useful tool
 for debugging C programs.
 
+If you prefer an IDE see the [VS Code installation and setup guide](VSCode.md).
+
 ## People
 
 The teachers are
