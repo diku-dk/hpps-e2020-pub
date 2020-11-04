@@ -8,15 +8,19 @@ where the focus is on honing your skill at software construction.  For
 all labs except this one, you will be assigned reading and/or videos
 to watch in advance.
 
-For this first lab you are not assumed to have done any reading.  Our
-goal today will be on ensuring that you have the tools you will need
-for the course, so we don't have to spend too much time on technical
-hindrances later on.  Most subsequent labs will be directly focused on
+If you have not watched the vidoe or read anything for this first lab,
+fear not! Our goal today will be on ensuring that you have the tools 
+you will need for the course, so we don't have to spend too much time 
+on technical hindrances later on. Please make sure that you have watched
+the videos and read the material *before* the next lab session.
+
+Most subsequent labs will be directly focused on
 exercising the concepts used in the *mandatory assignments*.  Each lab
 consists of tasks listed in a document, like this one.  Lab work is
 not *mandatory*, and you do not submit it anywhere (but you are
 encouraged to ask for feedback!), but you cannot expected to pass the
 course without active participation in the labs.
+
 
 During the lab, you can ask for help physically (when we have a
 room...), or [on the Discord
