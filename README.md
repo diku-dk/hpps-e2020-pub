@@ -9,7 +9,7 @@ the lectures are shorter and available as self-study videos, and
 the lecture time is instead used to solve and discuss problems.
 
 Since we are teaching remotely this year, we have two kinds of
-teaching sessions: **labs** and **exercise classes**.  You will be
+teaching sessions: **labs** and **exercise sessions**.  You will be
 assigned **videos** and **reading**.
 
 The videos are available in advance, and must be viewed before
