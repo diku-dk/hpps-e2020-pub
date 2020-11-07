@@ -13,7 +13,7 @@ teaching sessions: **labs** and **exercise classes**.  You will be
 assigned **videos** and **reading**.
 
 The videos are available in advance, and must be viewed before
-attending the lectures. The videos stay available throughout the course
+attending the labs. The videos stay available throughout the course
 so you are free to (re-)view them whenever it suits you.
 
 In the **labs** we will focus on solving concrete problems in small
@@ -42,7 +42,7 @@ The textbooks are as follows:
 
 ### Videos
 
-The authors of the CS:APP textbook [have made videos available of ther
+The authors of the CS:APP textbook [have made videos available of their
 lectures](https://www.youtube.com/playlist?list=PLmBgoRqEQCWy58EIwLSWwMPfkwLOLRM5R).
 Note that these lectures are from a classic systems programming
 course, with a different focus (and much longer length) than HPPS.
