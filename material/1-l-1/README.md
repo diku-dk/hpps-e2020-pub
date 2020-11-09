@@ -5,10 +5,10 @@ classroom](https://en.wikipedia.org/wiki/Flipped_classroom) teaching
 component that we use in HPPS instead of traditional lectures.  This
 is motivated by the idea that HPPS is mostly an *applied* course,
 where the focus is on honing your skill at software construction.  For
-all labs except this one, you will be assigned reading and/or videos
-to watch in advance.
+all labs you will be assigned reading and/or videos to watch in
+advance.
 
-If you have not watched the vidoe or read anything for this first lab,
+If you have not watched the video or read anything for this first lab,
 fear not! Our goal today will be on ensuring that you have the tools 
 you will need for the course, so we don't have to spend too much time 
 on technical hindrances later on. Please make sure that you have watched
