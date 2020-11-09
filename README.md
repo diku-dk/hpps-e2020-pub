@@ -52,16 +52,21 @@ However, they may still be worth watching.
 
 The **labs** take place on
 
-* Tuesday 10:15-12:00
+* Tuesday 10:15-12:00 (online)
 
-* Thursday 13:15-15:00
+* Thursday 13:15-15:00 (Lille-UP1 at DIKU, technically 04-1-22)
 
-The **exercise classes** take place on
+The **exercises** take place on
 
 * Thursday 15:15-17:00
 
-Once we know whether we will be allowed to meet physically, we will
-add this information.
+The exercises are split along the four *hold*, in the following rooms:
+
+* **Hold 01 (DatØK):** 1-0-14 (DIKU)
+* **Hold 02 (DatØK):** 1-0-34 (DIKU)
+* **Hold 03 (ML):** A111 (HCØ)
+* **Hold 04 (ML):** 1-0-30 (DIKU)
+
 
 ## Discord
 
