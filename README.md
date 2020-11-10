@@ -67,13 +67,27 @@ The exercises are split along the four *hold*, in the following rooms:
 * **Hold 03 (ML):** A111 (HCØ)
 * **Hold 04 (ML):** 1-0-30 (DIKU)
 
+The Tuesday labs are entirely online, and for the Thursday labs you
+can decide whether to show up physically or participate online.
+
+The theoretical exercises on Thursday are physical, but will also make
+an effort to have teaching resources accessible on the Discord server
+for those who prefer to participate virtually.
 
 ## Discord
 
-Virtual labs and exercise classes take place on [this Discord
+Virtual labs take place on [this Discord
 server](https://discord.com/channels/768764206383366185/) ([invite
 link](https://discord.gg/KdXMA3v)).  Note that teachers and TAs are
 only expected to respond during normal class hours.
+
+## Zoom
+
+https://ucph-ku.zoom.us/j/63242906073
+
+This Zoom room will be used for the first introductory lab on 17/11.
+It is not clear whether it will be used after that, but we may decide
+to do more mass lectures.
 
 ## Assignments
 
