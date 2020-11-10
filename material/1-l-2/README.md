@@ -10,7 +10,7 @@ If you did not yet watch the videos, they can be found here:
 
 # Understanding the bit layout
 
-The C programming language will default to treating a sequence of bits with the type we apply. When we get to pointers, you will be able to peek behind this abstraction, but for the first assignment we only need to consider the numbers as bit sequences.
+The C programming language will default to treating a sequence of bits with the type we apply. When we get to pointers, you will be able to peek behind this abstraction, but for the first assignment we initially need to consider the numbers as bit sequences.
 
 ```
 uint16  0000 |  0000 | 0000 | 0000
