@@ -4,6 +4,10 @@ This lab is intended to get you started with the C programming language and the 
 
 You can choose to work in your groups if you feel more comfortable, but I encourage you to work individually during the lab session, and then compare your own work with your group members afterwards.
 
+If you did not yet watch the videos, they can be found here:
+ - [Video 1](https://sid.erda.dk/share_redirect/HdGvFiz89C)
+ - [Video 2](https://sid.erda.dk/share_redirect/bdbFr585uY)
+
 # Understanding the bit layout
 
 The C programming language will default to treating a sequence of bits with the type we apply. When we get to pointers, you will be able to peek behind this abstraction, but for the first assignment we only need to consider the numbers as bit sequences.
