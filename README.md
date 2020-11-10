@@ -26,7 +26,14 @@ As the exam will be a written exam, the **exercise sessions** will be
 focused on solving problems similar to those that will be used in the
 exam.
 
-TODO: link course outline PDF here (or somewhere more prominently).
+## Course overview
+
+We have compiled an overview of the course in the 
+[**course outline**](https://github.com/diku-dk/hpps-e2020-pub/raw/master/course_outline_student.pdf)
+document, which we will update throughout the course.
+
+If you are in doubt of what to read, watch, or write, the answer
+should be in the course outline document.
 
 ## Textbook
 
