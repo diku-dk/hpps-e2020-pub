@@ -115,7 +115,7 @@ material and ideas.
 
 To qualify for the exam you are required to achieve at least 50% of
 the total number of points in the four assignments (that is, 8 points
-at minimum).
+at minimum). You also need to get *at least* one point pr. assignment.
 
 It is also important to note, that the main purpose of the assignments
 are not to prepare you for the exam; that is what the exercise classes
