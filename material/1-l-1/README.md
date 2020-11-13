@@ -69,6 +69,8 @@ following:
 
 * How to move/rename files (`mv`).
 
+* How to delete files and directories (`rm`).
+
 ## Compiling C programs
 
 You will be doing a lot of C programming in HPPS, so you need to make
