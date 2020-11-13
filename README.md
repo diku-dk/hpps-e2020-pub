@@ -160,3 +160,5 @@ The TAs are
 * Laurent Lindpointner (<xrw514@alumni.ku.dk>)
 
 * Albert Alonso de la Fuente (<ckz831@alumni.ku.dk>)
+
+* Tor Skovsgaard (<vtj997@a.ku.dk>)
