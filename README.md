@@ -170,4 +170,4 @@ The TAs are
 
 * Albert Alonso de la Fuente (<ckz831@alumni.ku.dk>)
 
-* Tor Skovsgaard (<vtj997@a.ku.dk>)
+* Tor Skovsgaard (<vtj997@alumni.ku.dk>)
