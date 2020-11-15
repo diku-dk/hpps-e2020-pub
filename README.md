@@ -88,6 +88,15 @@ server](https://discord.com/channels/768764206383366185/) ([invite
 link](https://discord.gg/KdXMA3v)).  Note that teachers and TAs are
 only expected to respond during normal class hours.
 
+The Discord server contains voice channels called *group rooms*.
+These are intended for interactive help during labs and exercises.
+Simply enter a vacant group room and (hopefully) a teacher or TA will
+join and help you out (write a message in one of the text channels if
+you've been overlooked).  You can also share your screen (maybe only
+when using the standalone Discord app), if necessary.  When you are
+done getting help, please leave the room to make it available for
+others.
+
 ## Zoom
 
 https://ucph-ku.zoom.us/j/63242906073
