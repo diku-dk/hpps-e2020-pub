@@ -67,12 +67,13 @@ The **exercises** take place on
 
 * Thursday 15:15-17:00
 
-The exercises are split along the four *hold*, in the following rooms:
+The exercises are split along the four *hold*, in the following rooms
+and TAs:
 
-* **Hold 01 (DatØK):** 1-0-14 (DIKU)
-* **Hold 02 (DatØK):** 1-0-34 (DIKU)
-* **Hold 03 (ML):** A111 (HCØ)
-* **Hold 04 (ML):** 1-0-30 (DIKU)
+* **Hold 01 (DatØK):** 1-0-14 (DIKU), Georgios
+* **Hold 02 (DatØK):** 1-0-34 (DIKU), Laurent
+* **Hold 03 (ML):** A111 (HCØ), Albert
+* **Hold 04 (ML):** 1-0-30 (DIKU), Tor
 
 The Tuesday labs are entirely online, and for the Thursday labs you
 can decide whether to show up physically or participate online.
@@ -164,10 +165,10 @@ The teachers are
 
 The TAs are
 
-* Georgios Garidis (<dpv246@alumni.ku.dk>)
+* Georgios Garidis (<dpv246@alumni.ku.dk>) (Hold 01)
 
-* Laurent Lindpointner (<xrw514@alumni.ku.dk>)
+* Laurent Lindpointner (<xrw514@alumni.ku.dk>) (Hold 02)
 
-* Albert Alonso de la Fuente (<ckz831@alumni.ku.dk>)
+* Albert Alonso de la Fuente (<ckz831@alumni.ku.dk>) (Hold 03)
 
-* Tor Skovsgaard (<vtj997@alumni.ku.dk>)
+* Tor Skovsgaard (<vtj997@alumni.ku.dk>) Hold (04)
