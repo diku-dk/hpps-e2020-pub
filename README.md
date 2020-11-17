@@ -121,6 +121,14 @@ students. Each group must make their own solutions and cannot share
 implementations and report with other. You may however discuss
 material and ideas.
 
+## Study café
+
+On Friday 13:00-15:00 you will be able to get help with the
+assignments at the study café.
+
+You will be able to get help on Discord and offline, although the
+precise physical location is still undecided.
+
 ## Exam qualification
 
 To qualify for the exam you are required to achieve at least 50% of
