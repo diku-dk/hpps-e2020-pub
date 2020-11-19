@@ -1,4 +1,4 @@
-#include <stdlib.h>
+#include <stdint.h>
 typedef uint16_t tfl16_t;
 
 tfl16_t  tfl_sign(tfl16_t value);
