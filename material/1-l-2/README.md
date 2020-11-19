@@ -26,7 +26,7 @@ tfl16: 0 00000 0000000000
 
 As mentioned in the assignment, we need to implement a number of methods. These are declared in a header file, and as such you can include them with a simple line near the top of yor main C file, such as:
 ```c
-#include "./tfllib.h"
+#include "./tfl.h"
 ```
 
 If you prefer to work in single-file mode for now, you can also simply copy-n-paste the contents of the header file into your main file (this is what the C compiler does behind the scenes anyway).
