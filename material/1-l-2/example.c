@@ -88,6 +88,27 @@ int test_tfl_exponent() {
   return 0;
 }
 
+// Print the bit pattern, as shown in the assignment
+// eg: 0 00010 1100100100
+void print_bits(tfl16_t value) {
+    printf("%u ", value >> 15);
+    for(size_t i = 0; i < 5; i++) {
+        printf("%u", (value >> (10 + (4 - i))) & 0x1);
+    }
+    printf(" ");
+    for(size_t i = 0; i < 10; i++) {
+        printf("%u", (value >> (9 - i)) & 0x1);
+    }
+    printf("\n");
+}
+
+// Prints a formula, as shown in the assignment,
+// eg: 1 * 2^1 * 120/1024
+void print_parts(tfl16_t value) {
+    printf("%i * 2^%i * %u / 1024\n", (value & 0x8000) ? -1 : 1, (int8_t)(((value >> 10) & 0x1f) | ((value & 0x4000) ? 0xF0 : 0x0)), value & 0x3ff);
+}
+
+
 int main() {
   if (test_tfl_sign() != 0) {
       return 1;
