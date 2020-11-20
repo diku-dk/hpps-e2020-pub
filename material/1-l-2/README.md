@@ -8,6 +8,10 @@ If you did not yet watch the videos, they can be found here:
  - [Video 1](https://sid.erda.dk/share_redirect/cO5fYbAdIo/1%20-%20Lecture.mp4) ([slides for video 1](https://github.com/diku-dk/hpps-e2020-pub/raw/master/material/1-l-2/1%20-%20Lecture.pdf))
  - [Video 2](https://sid.erda.dk/share_redirect/hMrFbYiUgC/2%20-%20Lecture.mp4) ([slides for video 2](https://github.com/diku-dk/hpps-e2020-pub/raw/master/material/1-l-2/2%20-%20Lecture.pdf))
 
+# Update 2020-11-19
+
+After the lab session was concluded, [I wrote some notes based on the student feedback](followup.md) as well as a [template file](template.c) that should get you started with the assignment.
+
 # Understanding the bit layout
 
 The C programming language will default to treating a sequence of bits with the type we apply. When we get to pointers, you will be able to peek behind this abstraction, but for the first assignment we initially need to consider the numbers as bit sequences.
