@@ -24,7 +24,8 @@ strategies for the problem.
 
 As the exam will be a written exam, the **exercise sessions** will be
 focused on solving problems similar to those that will be used in the
-exam.
+exam.  **The exercises for each session are in the [course
+outline](https://github.com/diku-dk/hpps-e2020-pub/raw/master/course_outline_student.pdf)**.
 
 ## Course overview
 
