@@ -23,14 +23,18 @@ int read_ascii_int(FILE *f, int *out) {
 }
 
 int main(int argc, char** argv) {
-  int x;
-
   assert(argc == 3);
-  FILE *in = fopen(argv[1], "r");
-  FILE *out = fopen(argv[2], "w");
 
+  FILE *in = fopen(argv[1], "r");
+  assert(in != NULL);
+
+  FILE *out = fopen(argv[2], "w");
+  assert(out != NULL);
+
+  int x;
   while (read_ascii_int(in, &x) == 0) {
     printf("%d\n", x);
-    fwrite(&x, sizeof(int), 1, out);
+    int written = fwrite(&x, sizeof(int), 1, out);
+    assert(written == 1);
   }
 }
