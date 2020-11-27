@@ -1,5 +1,17 @@
 # Lab: processes
 
+For today's lab, feel free to use the definitions from the
+[csapp.h](csapp.h)/[csapp.c](csapp.c) utility library.  It contains
+wrappers around system functions (such as `fork()`) that do their own
+error checking with proper error message.  These wrappers are with a
+leading capital (e.g. `Fork()`).  If you do use the `csapp` library,
+remember to link it with your own code, as you did for `io.c` last
+week!
+
+This directory also contains a program [`forks.c`](forks.c) (buildable
+via the [`Makefile`](Makefile)) that contains some of the code shown
+in the videos, and demonstrates process control.
+
 ## Problems from CSAPP
 
 * 8.6 (page 788)
