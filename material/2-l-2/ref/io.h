@@ -10,7 +10,7 @@
 // responsibility to eventually free the returned pointer with free().
 double* read_points(FILE *f, int *n_out, int* d_out);
 
-// Read indexes from a points data file.  Returns a pointer to the
+// Read indexes from an indexes data file.  Returns a pointer to the
 // data, and writes the size to the n_out and k_out arguments.
 // Returns a NULL pointer if reading fails.  It is the caller's
 // responsibility to eventually free the returned pointer with free().
