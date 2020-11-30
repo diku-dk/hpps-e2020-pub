@@ -45,7 +45,7 @@ The textbooks are as follows:
 * [Modern C](https://modernc.gforge.inria.fr/) ([CC-licensed PDF](https://gforge.inria.fr/frs/download.php/latestfile/5298/ModernC.pdf))
 
 * [HPPS course notes](notes.pdf) - **these will be updated as the
-  course progresses, so make sure to regularlyl check that you have
+  course progresses, so make sure to regularly check that you have
   the newest version**
 
 ### Videos
