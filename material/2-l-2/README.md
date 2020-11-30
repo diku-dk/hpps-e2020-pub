@@ -42,9 +42,6 @@ We will be working with two kinds of data files.
   Example files for testing: [`20_5.points`](20_5.points),
   [`10_2.points`](10_2.points).
 
-  The file `20_5.points` contains a properly formatted data file that
-  you can use for testing.
-
 * *Index files* are much like points files, but instead of containing
   `double` values, they contain 4-byte `int` values, which are
   supposed to be valid 0-based indexes into the points of some other
