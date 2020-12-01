@@ -5,7 +5,7 @@ set logscale y
 set pm3d
 set yrange [268435456:32768]
 set zlabel 'throughput (MiB/s)' rotate
-set xlabel 'stride (x8 bytes)'
+set xlabel 'stride (x4 bytes)'
 set ylabel 'size (bytes)'
 splot 'locality.data' with lines
 exit
