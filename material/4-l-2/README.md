@@ -28,7 +28,7 @@ If you get stuck, there is a reference solution in the [ref](./ref/) folder.
 
 ## The second task: set up an automated stock guesser
 
-As before, there look in the [src](./src/) folder and find a template file called [`zmqsubscriber.py`](./src/zmqsubscriber.py). The file contains support code for computing the [exponential weighted moving average, EWMA](https://en.wikipedia.org/wiki/Moving_average#Exponential_moving_average) for the a value. The EWMA algorithm that is used on stock pricing is actually the same algorithm that is used to compute the expected RTT for a TCP package when deciding what timeout values to apply.
+As before, look in the [src](./src/) folder and find a template file called [`zmqsubscriber.py`](./src/zmqsubscriber.py). The file contains support code for computing the [exponential weighted moving average, EWMA](https://en.wikipedia.org/wiki/Moving_average#Exponential_moving_average) for the a value. The EWMA algorithm that is used on stock pricing is actually the same algorithm that is used to compute the expected RTT for a TCP package when deciding what timeout values to apply.
 
 By applying two diffent EWMA decays for a signal we can observe the [moving average convergence](https://en.wikipedia.org/wiki/MACD), which can be interpreted as a signal indicating if the price is currently increasing or decreasing.
 
