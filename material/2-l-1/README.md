@@ -21,7 +21,7 @@ Then when you add a program `foo`, add a rule to Makefile as follows:
 
 ```Makefile
 foo: foo.c
-    $(CC) -o foo foo.c $(CFLAGS)
+	$(CC) -o foo foo.c $(CFLAGS)
 ```
 
 Beware: the leading whitespace must be a single tab character. Now, to

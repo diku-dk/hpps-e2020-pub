@@ -11,11 +11,12 @@ int read_int(FILE *f, int *out) {
 }
 
 int main(int argc, char** argv) {
-  int x;
-
   assert(argc == 2);
-  FILE *f = fopen(argv[1], "r");
 
+  FILE *f = fopen(argv[1], "r");
+  assert(f != NULL);
+
+  int x;
   while (read_int(f, &x) == 0) {
     printf("%d\n", x);
   }

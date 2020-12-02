@@ -24,7 +24,8 @@ strategies for the problem.
 
 As the exam will be a written exam, the **exercise sessions** will be
 focused on solving problems similar to those that will be used in the
-exam.
+exam.  **The exercises for each session are in the [course
+outline](https://github.com/diku-dk/hpps-e2020-pub/raw/master/course_outline_student.pdf)**.
 
 ## Course overview
 
@@ -44,7 +45,7 @@ The textbooks are as follows:
 * [Modern C](https://modernc.gforge.inria.fr/) ([CC-licensed PDF](https://gforge.inria.fr/frs/download.php/latestfile/5298/ModernC.pdf))
 
 * [HPPS course notes](notes.pdf) - **these will be updated as the
-  course progresses, so make sure to regularlyl check that you have
+  course progresses, so make sure to regularly check that you have
   the newest version**
 
 ### Videos

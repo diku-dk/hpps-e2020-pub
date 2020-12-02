@@ -42,9 +42,6 @@ We will be working with two kinds of data files.
   Example files for testing: [`20_5.points`](20_5.points),
   [`10_2.points`](10_2.points).
 
-  The file `20_5.points` contains a properly formatted data file that
-  you can use for testing.
-
 * *Index files* are much like points files, but instead of containing
   `double` values, they contain 4-byte `int` values, which are
   supposed to be valid 0-based indexes into the points of some other
@@ -151,6 +148,36 @@ essentially a two-dimensional array in row-major order.
 In these task you will be implementing functions for converting
 in-memory data to on-disk data.  The files you generate here should be
 readable by the programs you just implemented.
+
+### Functions
+
+Similarly to above, you need to implement the `write_points()` and
+`write_indexes()` functions declared in `io.h`.
+
+For example, the function
+
+```C
+int write_points(FILE *f, int32_t n, int32_t d, double *data);
+```
+
+should write (to a file opened with `fopen()`) an *n✕d* matrix whose
+elements are double-precision floats, given a pointer that points to
+the raw data.  The size of the matrix is passed via the `n` and `d`
+parameters.  The function should return 0 if the write succeeds, and
+otherwise 1.
+
+An example of how to use the function (but here without error
+checking) is as follows:
+
+```C
+double *data = malloc(n*d*sizeof(double))
+// fill data somehow
+FILE *points_f = fopen("n_d.points", "w");
+write_points(points_f, n, d, data);
+```
+
+You must also implement the `write_indexes()` function, which is very
+similar.
 
 ### Generating random points files
 
