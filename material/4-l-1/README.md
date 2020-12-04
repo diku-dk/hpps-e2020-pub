@@ -2,7 +2,8 @@
 
 While the internet that we use daily is created to be usable without understanding the inner workings, we can still peak into it and examine how it works.
 
-The prerequisite for this lab is the video for session 7.
+The prerequisite for this lab is:
+  * [Video 7](https://sid.erda.dk/share_redirect/h2afbmlKRA/7%20-%20Lecture.mp4)([slides for video 7](https://github.com/diku-dk/hpps-e2020-pub/raw/master/material/4-l-1/7%20-%20Lecture.pdf))
 
 ## Required tools
 
