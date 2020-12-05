@@ -16,7 +16,7 @@ assignment, as everything here is directly relevant.
   before moving on.
 
 You should consider writing and extending a `Makefile` during your
-work, as you will be creating several different files for htis lab.
+work, as you will be creating several different files for this lab.
 The code handout contains the start of one that you can extend as
 needed.
 
