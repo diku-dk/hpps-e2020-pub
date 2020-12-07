@@ -1,0 +1,4 @@
+sumbytes-*
+*.o
+*.bytes
+mkbytes
