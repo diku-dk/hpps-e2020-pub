@@ -93,6 +93,11 @@ that are not divisible by two.
 
 ##### Hints
 
+* If you find it difficult to get going, then start by writing a
+  sequential program (no threads) that morally does what we want the
+  multi-threaded program to do.  That is, use two function calls to
+  compute the sum of the first and the last half of the input.
+
 * The `thread_fn` function should take a pointer to a `thread_arg`
   struct as argument.  Add fields to the `thread_arg` struct that you
   believe are necessary.
