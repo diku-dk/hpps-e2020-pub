@@ -4,7 +4,8 @@ In todays lab we will experiment with networking applications. Ideally, the appl
 
 If you are using the terminal for debugging, you will need to have two terminals open. If you are using an IDE, such as VSCode, you will need to run two instances.
 
-The prerequisite for this lab is the video for session 8.
+The prerequisite for this lab is:
+  * [Video 8](https://sid.erda.dk/share_redirect/E1AHoSA0B6/8%20-%20Lecture.mp4)([slides for video 8](https://github.com/diku-dk/hpps-e2020-pub/raw/master/material/4-l-2/8%20-%20Lecture.pdf))
 
 ## Installing required packages
 
