@@ -59,6 +59,8 @@ Your network supports sending packages that are at most 1500 bytes long. You mea
 
 You have leased a dedicated network link between two machines. The seller boasts 100 MiB/s, 2000 byte packages and a 7 ms RTT. You set up the hosts, using a simple protocol that sends a package, and waits for an acknowledgement before sending the next package. What utilization can you report to the seller?
 
+_Note_: To simplify the calculations, the speed here is supplied in **mega bytes**. If you purchase an internet connection, the speed is often reported in **mega bits**, such that 10 Mbits/s is equal to 1.25 MBytes/s.
+
 <details>
   <summary>Open this to see the answer</summary>
 
@@ -194,7 +196,7 @@ Consider the following HTTP request:
 POST /work/data?fresh=true HTTP/1.1\r\n
 Host: inter.example.com\r\n
 User-Agent: my-client\r\n
-Accept-Language: en
+Accept-Language: en\r\n
 \r\n
 ```
 
