@@ -312,7 +312,7 @@ Given each of these addresses, give the port the address is routed to.
 * 128.1.0.1
 * 128.1.7.2
 * 128.128.0.0
-* 128.2.1.1
+* 128.2.0.1
 * 128.3.1.1
 
 <details>
@@ -324,7 +324,7 @@ Given each of these addresses, give the port the address is routed to.
   * C
 * 128.128.0.0
   * D
-* 128.2.1.1
+* 128.2.0.1
   * C
 * 128.3.1.1
   * A
