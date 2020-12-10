@@ -50,7 +50,7 @@ Your network supports sending packages that are at most 1500 bytes long. You mea
   ```
   20 ms = 0.02 s
   1/0.02 = 50 packages pr. second
-  bandwidth = 50 * 1500 = 75,000 b/s, or appx 73.24 KiB/s
+  bandwidth = 50 * 1500 = 75,000 B/s, or appx 73.24 KiB/s
   ```
   
 </details>
@@ -59,7 +59,7 @@ Your network supports sending packages that are at most 1500 bytes long. You mea
 
 You have leased a dedicated network link between two machines. The seller boasts 100 MiB/s, 2000 byte packages and a 7 ms RTT. You set up the hosts, using a simple protocol that sends a package, and waits for an acknowledgement before sending the next package. What utilization can you report to the seller?
 
-_Note_: To simplify the calculations, the speed here is supplied in **mega bytes**. If you purchase an internet connection, the speed is often reported in **mega bits**, such that 10 Mbits/s is equal to 1.25 MBytes/s.
+_Note_: To simplify the calculations, the speed here is supplied in **mega bytes**. If you purchase an internet connection, the speed is often reported in **mega bits**, such that 10 Mbits/s is equal to 1.25 MBytes/s. It is convention to use lowercase `b` when refering to **bits** and uppercase `B` when refering to **bytes**, but beware that this rule is often not followed.
 
 <details>
   <summary>Open this to see the answer</summary>
@@ -67,7 +67,7 @@ _Note_: To simplify the calculations, the speed here is supplied in **mega bytes
   ```
   7 ms = 0.007 s
   1/0.007 = 142.857 packages pr. second
-  bandwidth = 142.857 * 2000 = 285,714 b/s, or appx 0.27 MiB/s
+  bandwidth = 142.857 * 2000 = 285,714 B/s, or appx 0.27 MiB/s
   utilization = 0.27/100 = 0.0027, or 0.27%
   ```
   
@@ -92,7 +92,7 @@ Using the same setup as the previous question, you alter your protocol to suppor
 
   1/0.007 = 142.857 packages pr. second
 
-  bandwidth = 142.857 * 2000 * 200 = 57,142,800 b/s, or appx 54.50 MiB/s
+  bandwidth = 142.857 * 2000 * 200 = 57,142,800 B/s, or appx 54.50 MiB/s
   utilization = 54.5/100 = 0.545, or 54,5%
   same as 0.27% * 200
   ```
@@ -116,7 +116,7 @@ Using the same setup as the previous question, what is the number of packages th
   7ms gives 
     1/0.007 = 142.857 packages pr. second
 
-  bandwidth = 142.857 * 2000 * 368.42 = 105,262,751.88 b/s, or appx 100,38 MiB/s
+  bandwidth = 142.857 * 2000 * 368.42 = 105,262,751.88 B/s, or appx 100,38 MiB/s
   (slightly off due to rounding error)
   ```
   
@@ -312,7 +312,7 @@ Given each of these addresses, give the port the address is routed to.
 * 128.1.0.1
 * 128.1.7.2
 * 128.128.0.0
-* 128.2.1.1
+* 128.2.0.1
 * 128.3.1.1
 
 <details>
@@ -324,7 +324,7 @@ Given each of these addresses, give the port the address is routed to.
   * C
 * 128.128.0.0
   * D
-* 128.2.1.1
+* 128.2.0.1
   * C
 * 128.3.1.1
   * A
