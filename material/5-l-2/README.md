@@ -1,6 +1,6 @@
 ![header](header.png)
 
-# Lab: parallel programming with OpenMP (WIP prerelease)
+# Lab: parallel programming with OpenMP
 
 One of the nice aspects of being a teacher is that if you find a hobby
 you enjoy, you can force your students to enjoy it along with you.
@@ -52,7 +52,7 @@ The core of the Mandelbrot program is a two-deep loop nest that
 computes pixel values.  It does this by computing the complex number
 corresponding to a pixel, and then calling the function `divergence`,
 which uses a loop to count how many "orbits" the complex number makes
-before its distance exceeds the given "radious", with the iteration
+before its distance exceeds the given "radius", with the iteration
 count being limited.  Those pixels that hit the iteration limit are
 coloured black, and the others are passed through a convoluted
 colouring function (`escape_to_colour`), the details of which are not
@@ -70,7 +70,7 @@ add instrumentation so that when the program runs, it prints how long
 these two parts take.  E.g:
 
 ```
-./mandelbrot preset0.ppm 1000 1000 100 16 -0.7 0.0 3.067
+$ ./mandelbrot preset0.ppm 1000 1000 100 16 -0.7 0.0 3.067
 Rendering time: 0.143732s
 IO time: 0.057136s
 ```
