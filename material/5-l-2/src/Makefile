@@ -1,5 +1,5 @@
 CC=gcc
-CFLAGS=-Wall -Wextra -pedantic -pthread -lm -g -fopenmp
+CFLAGS=-Wall -Wextra -pedantic -pthread -lm -O3 -fopenmp
 EXECUTABLES=mandelbrot
 
 all: $(EXECUTABLES)
