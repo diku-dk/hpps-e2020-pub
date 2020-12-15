@@ -408,30 +408,34 @@ void Pthread_once(pthread_once_t *once_control, void (*init_function)()) {
     pthread_once(once_control, init_function);
 }
 
-/*******************************
- * Wrappers for Posix semaphores
- *******************************/
+/********************************
+ * Implementation of semaphores *
+ ********************************/
 
-void Sem_init(sem_t *sem, int pshared, unsigned int value) 
-{
-    if (sem_init(sem, pshared, value) < 0)
-	unix_error("Sem_init error");
+void Sem_init(sem_t *sem, int pshared, unsigned int value) {
+  if (pshared != 0) {
+    unix_error("Shared semaphores are not supported");
+  }
+
+  sem->value = value;
+  pthread_mutex_init(&sem->lock, 0);
+  pthread_cond_init(&sem->cond, NULL);
 }
 
-void P(sem_t *sem) 
-{
-    if (sem_wait(sem) < 0)
-	unix_error("P error");
+void P(sem_t *sem) {
+  pthread_mutex_lock(&sem->lock);
+  while (sem->value == 0) {
+    pthread_cond_wait(&sem->cond, &sem->lock);
+  }
+  sem->value--;
+  pthread_mutex_unlock(&sem->lock);
 }
 
-void V(sem_t *sem) 
-{
-    if (sem_post(sem) < 0)
-	unix_error("V error");
+void V(sem_t *sem) {
+  pthread_mutex_lock(&sem->lock);
+  sem->value++;
+  pthread_cond_broadcast(&sem->cond);
+  pthread_mutex_unlock(&sem->lock);
 }
 
 /* $end csapp.c */
-
-
-
-
