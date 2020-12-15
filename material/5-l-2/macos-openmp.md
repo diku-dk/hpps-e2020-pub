@@ -7,7 +7,7 @@ get the following error:
 clang: error: unsupported option '-fopenmp'
 ```
 
-This is because the `gcc` commang on macOS actually runs
+This is because the `gcc` command on macOS actually runs
 [`clang`](https://clang.llvm.org/), a different C compiler, and for
 some reason Apple has disabled OpenMP support.  The best way to solve
 this problem is to install a proper version of GCC.
@@ -17,12 +17,12 @@ this problem is to install a proper version of GCC.
 
 * Then run `brew install gcc` to install GCC.
 
-This will not change the default `gcc` command, and we don't recommend
-you change it (since other Mac software might expect the default to be
-in place).  Instead, you can use the command `gcc-10` to run the
-installed version of GCC (10 as of this writing, maybe it will be
-`gcc-11` when you read this in the cool sci-fi future).  That is, to
-compile a program, run:
+This will not change the default `gcc` command.  We don't recommend
+you change it, since other Mac software might expect the default to be
+in place.  You can use the command `gcc-10` to run the installed
+version of GCC (10 as of this writing, maybe it will be `gcc-11` when
+you read this in the cool sci-fi future).  That is, to compile a
+program, run:
 
 ```
 $ gcc-10 foo.c -o foo -fopenmp
