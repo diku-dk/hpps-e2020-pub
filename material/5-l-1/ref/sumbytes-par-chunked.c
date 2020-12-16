@@ -55,7 +55,7 @@ int main(int argc, char* argv[]) {
 
   int num_threads = 16;
   pthread_t tids[num_threads];
-  int chunk_size = (size - num_threads + 1)/num_threads;
+  int chunk_size = (size + num_threads - 1)/num_threads;
 
   for (int i = 0; i < num_threads; i++) {
     struct thread_arg *arg = malloc(sizeof(struct thread_arg));

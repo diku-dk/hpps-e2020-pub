@@ -60,7 +60,7 @@ int main(int argc, char* argv[]) {
   arg1.sum_p = &sum;
   arg1.sum_mutex = &sum_mutex;
 
-  arg2.bytes = bytes;
+  arg2.bytes = bytes+size/2;
   arg2.n = size-size/2;
   arg2.sum_p = &sum;
   arg2.sum_mutex = &sum_mutex;
