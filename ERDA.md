@@ -22,3 +22,5 @@ Like most shared, large-scale facilities, MODI only allows execution of jobs sub
 Similar to large-scale facilities, MODI uses the [SLURM](https://slurm.schedmd.com/overview.html) scheduling system to give multiple users exclusive fair-usage allocations.
 
 While SLURM contains many features, the most common ones are covered in a [SLURM Quickguide](https://gist.github.com/ctokheim/bf68b2c4b78e9851b469be3425470699).
+
+**Important:** When running on MODI all your files need to be placed in `~/modi_mount` as this is the only folder the execution nodes can see. You need to place both the executable and any input/output files here. You can also only submit jobs from this folder, as the results cannot be written elsewhere.
