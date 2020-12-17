@@ -1,6 +1,6 @@
 # Running a program on MODI using Slurm
 
-When using a large shared machine you cannot just log in and run your code. To ensure the that all users get their shared, and to ensure that each execution is independent, you can only submit jobs into the shared queue. For most installations, and MODI in particular, this means using Slurm.
+When using a large shared machine you cannot just log in and run your code. To ensure the that all users get their share, and to ensure that each execution is independent, you can only submit jobs into the shared queue. For most installations, and MODI in particular, this means using [Slurm](https://slurm.schedmd.com/overview.html).
 
 ## Getting access to MODI
 
