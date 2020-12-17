@@ -40,6 +40,17 @@ Make sure the X-code command line tools are installed:
 $ xcode-select --install
 ```
 
-Otherwise the Internet is apparently full of people who have also
-found that Apple messed up C compilers for some reason:
-https://stackoverflow.com/questions/58278260/cant-compile-a-c-program-on-a-mac-after-upgrading-to-catalina-10-15/58278392
+Then prefix every build command with `xcrun`, e.g.:
+
+```
+$ xcrun make
+$ xcrun xcode-select --install
+```
+
+### If the above doesn't work
+
+Try this, but it's a bit ugly and *might* not be necessary:
+
+```
+$ sudo ln -s /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/* /usr/local/include/
+```
