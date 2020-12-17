@@ -59,9 +59,9 @@ After 10 iterations, delta was 1.108848
 With a compiled binary, you are now ready to submit a job. However, slurm works best with scripts, so we need to write a small wrapper that emits some results we will need later. Create a file called `work.sh` with the following contents:
 ```bash
 #!/bin/bash
-export OMP_NUM_THREADS=$1
-echo "Running ($2x$3:$4) with ${OMP_NUM_THREADS} threads"
-time ./heat-equation $2 $3 $4
+export OMP_NUM_THREADS=${1}
+echo "Running (${2}x${3}:${4}) with ${OMP_NUM_THREADS} threads"
+time ./heat-equation ${2} ${3} ${4}
 ```
 
 This will serve as a script for running the executable where we can change the parameters as we want. To submit the very first job, we can run the `sbatch` command:
