@@ -18,7 +18,7 @@ On the MODI Jupyter service page click "Start my server":
 Then make sure you have HPC Notebook (should be default) and click "Spawn":
 ![Spawn MODI instance](screen-04.png "Spawn MODI instance on ERDA")
 
-After a small waiting perioed, you will get a Jupyter start page, and have access to the MODI front-end server.
+After a small waiting period, you will get a Jupyter start page, and have access to the MODI front-end server.
 
 For most systems, and MODI in particular, the front-end server is a trimmed down versions of the real servers. The machine has build tools matching the target servers, allowing you to compile and run small tests directly on the frontend.
 
