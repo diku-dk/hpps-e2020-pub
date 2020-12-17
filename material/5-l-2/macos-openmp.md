@@ -46,3 +46,10 @@ Then prefix every build command with `xcrun`, e.g.:
 $ xcrun make
 $ xcrun xcode-select --install
 ```
+
+To compile with `xcrun` + `gcc-10` you can use:
+
+```
+$ export CC=gcc-10 
+$ xcrun make
+```
