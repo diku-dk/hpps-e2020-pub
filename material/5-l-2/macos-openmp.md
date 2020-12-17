@@ -46,11 +46,3 @@ Then prefix every build command with `xcrun`, e.g.:
 $ xcrun make
 $ xcrun xcode-select --install
 ```
-
-### If the above doesn't work
-
-Try this, but it's a bit ugly and *might* not be necessary:
-
-```
-$ sudo ln -s /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/* /usr/local/include/
-```
