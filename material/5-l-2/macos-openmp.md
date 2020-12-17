@@ -31,3 +31,15 @@ $ gcc-10 foo.c -o foo -fopenmp
 In the Makefiles for the code handout, you should change the
 definition of `CC` to be `gcc-10` instead of `gcc` (*now* do you see
 the value of defining variables for this?).
+
+## If the above doesn't work
+
+Make sure the X-code command line tools are installed:
+
+```
+$ xcode-select --install
+```
+
+Otherwise the Internet is apparently full of people who have also
+found that Apple messed up C compilers for some reason:
+https://stackoverflow.com/questions/58278260/cant-compile-a-c-program-on-a-mac-after-upgrading-to-catalina-10-15/58278392
