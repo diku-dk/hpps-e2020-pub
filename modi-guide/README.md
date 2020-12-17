@@ -6,9 +6,18 @@ When using a large shared machine you cannot just log in and run your code. To e
 
 Before you can access MODI, you need to [set up an account on ERDA](https://erda.ku.dk), using your regular UCPH login.
 
-After you have logged in, you need to start the Jupyter service.
+After you have logged in, you need to start the Jupyter service:
+![Starting Jupyter on ERDA](screen-01.png "Starting Jupyter on ERDA")
 
-On the Jupyter service page, make sure you select the MODI tab, and then click "Start my server".
+Then choose the MODI tab and click "Start MODI":
+![Enter MODI service](screen-02.png "Enter MODI service")
+
+On the MODI Jupyter service page click "Start my server":
+![Starting Jupyter Service](screen-03.png "Starting MODI service on ERDA")
+
+Then make sure you have HPC Notebook (should be default) and click "Spawn":
+![Spawn MODI instance](screen-04.png "Spawn MODI instance on ERDA")
+
 After a small waiting perioed, you will get a Jupyter start page, and have access to the MODI front-end server.
 
 For most systems, and MODI in particular, the front-end server is a trimmed down versions of the real servers. The machine has build tools matching the target servers, allowing you to compile and run small tests directly on the frontend.
@@ -18,8 +27,10 @@ For most systems, and MODI in particular, the front-end server is a trimmed down
 Before starting the upload, make sure you have tested your application as much as possible on your own machine. It is possible to debug via a queue based system, but it is a slow and unplesant process.
 
 As we will need to run our binary on the execution nodes, we need to upload into the `modi_mount` directory. This is required because the execution nodes do not get your credentials, and cannot access any of the files stored on ERDA. You can mount ERDA temporarily on MODI, but that is not required for HPPS.
+![Entering modi_mount](screen-05.png "Entering the modi_mount directory")
 
-After you have selected the `modi_mount` directory, you can start uploading the files. In the example here, I have uploaded everything, including the `Makefile`.
+After you have selected the `modi_mount` directory, you can start uploading the files. In the example here, I have uploaded everything, including the `Makefile`. 
+![Uploading to MODI](screen-06.png "Uploading files to MODI")
 
 ## Compiling on MODI
 
