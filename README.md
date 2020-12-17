@@ -181,3 +181,29 @@ The TAs are
 * Albert Alonso de la Fuente (<ckz831@alumni.ku.dk>) (Hold 03)
 
 * Tor Skovsgaard (<vtj997@alumni.ku.dk>) Hold (04)
+
+## Exam format
+
+The exam will take the form of a 72-hour take-home exam with two
+parts:
+
+* A **theoretical part** that will test your non-coding knowledge of
+  the course curriculum, and will be very similar to the exercises
+  handed out at the Thursday labs.
+
+* A **practical part** that will test your ability to write parallel
+  systems-level code.  This part will most strongly resemble the
+  contents of assignment 4.
+
+You are not expected to work full-time for all three days.  We have
+not decided on an estimated workload yet, but the idea behind the
+72-hour exam format is to *minimise the consequences* of overlaps with
+another exam.  (We will still try to minimise overlaps of course, but
+it looks like many of you are taking a concurrent four-day exam, so it
+cannot be avoided entirely.)
+
+### Time and place
+
+The exam will take place online and in week 4.  The exact dates are
+still undecided, and we will try to place them so as to minimise
+conflicts with other course.
