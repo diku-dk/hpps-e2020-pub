@@ -204,6 +204,7 @@ cannot be avoided entirely.)
 
 ### Time and place
 
-The exam will take place online and in week 4.  The exact dates are
-still undecided, and we will try to place them so as to minimise
-conflicts with other course.
+The exam will take place online and run from the **28th to the 30th of
+January** (note that the 30th is a Saturday).  This is to avoid
+conflicts with other exams (specifically the ML course, which has
+promised to examinate all HPPS students prior to the 28th).
