@@ -62,5 +62,6 @@ int main(int argc, char* argv[]) {
   printf("Summing: %fs\n", sum_aft-sum_bef);
   printf("Result: %d\n", sum);
 
+  free(tids);
   free(bytes);
 }
