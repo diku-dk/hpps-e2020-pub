@@ -18,7 +18,7 @@ parallelism.  The basic steps are:
 *Maximising parallelism* is not always (or even usually) the same as
 *maximimising performance*.  Many of your transformations will
 actually make the program slower.  That doesn't mean you messed up, as
-long as the program still computes still computes the right result.
+long as the program still computes the right result.
 The goal for this lab is just to ensure that as many of the loops are
 executed in parallel as possible.  While this kind of fine-grain
 parallelism is *sometimes* useful (in particular when programming
