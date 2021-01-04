@@ -31,3 +31,25 @@ $ gcc-10 foo.c -o foo -fopenmp
 In the Makefiles for the code handout, you should change the
 definition of `CC` to be `gcc-10` instead of `gcc` (*now* do you see
 the value of defining variables for this?).
+
+## If the above doesn't work
+
+Make sure the X-code command line tools are installed:
+
+```
+$ xcode-select --install
+```
+
+Then prefix every build command with `xcrun`, e.g.:
+
+```
+$ xcrun make
+$ xcrun xcode-select --install
+```
+
+To compile with `xcrun` + `gcc-10` you can use:
+
+```
+$ export CC=gcc-10 
+$ xcrun make
+```

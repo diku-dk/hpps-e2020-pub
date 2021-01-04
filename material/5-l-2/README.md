@@ -152,3 +152,10 @@ small image with a high depth limit.
 Remember that "strong" and "weak" scaling are not just slang for
 "good" or "bad", but specifics terms of art covered in the video on
 scaling.
+
+## Parallelise KNN
+
+Remember the KNN implementation you made for assignment 2?  Try to see
+if there are any opportunities for parallel executions.  Then use
+OpenMP to parallelise the most promising ones, and see whether it
+makes it any faster.
