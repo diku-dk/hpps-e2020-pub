@@ -1,9 +1,14 @@
 # Exercises in loop analysis, transformations, and acceleators
 
+**Note:** _The solutions are not hidden on Internet Explorer/Edge_ as
+it does not support the feature used to hide them. Please use any
+other browser, or avoid scrolling into the solution.
+
 ## Direction vectors
 
 Construct all direction vectors for the following loop nests and
-indicate the type of dependency associated with each.
+indicate the type of dependency associated with each.  Also explain
+whether any of the loops can be executed in parallel.
 
 ### A
 
@@ -11,10 +16,17 @@ indicate the type of dependency associated with each.
 for (int k = 0; k < 100; k++)
   for (int j = 0; j < 100; j++)
     for (int i = 0; i < 100; i++)
-      A[i+1][j+2][k+1] = A[i][j][k+1] + B;
+      A[k+1][j+2][i+1] = A[k+1][j][i] + B;
 ```
 
-Can this loop nest be parallelised?  How?
+<details>
+  <summary>Open this to see the answer</summary>
+
+The access to `A` has a RAW dependency with directions `[=, <, <]`
+
+This implies the outer loop can be executed in parallel.
+
+</details>
 
 ### B
 
@@ -22,10 +34,21 @@ Can this loop nest be parallelised?  How?
 for (int k = 0; k < 100; k++)
   for (int j = 0; j < 100; j++)
     for (int i = 0; i < 100; i++)
-      A[I+1][J][K] = A[I][J][5] + B;
+      A[k][j][i+1] = A[5][j][i] + B;
 ```
 
-Can this loop nest be parallelised?  How?
+<details>
+  <summary>Open this to see the answer</summary>
+
+* The access to A has:
+
+  * A RAW dependency with directions `[*, =, <]`.
+
+  * A WAR dependency with directions `[*, =, <]`
+
+This implies that the middle loop can be executed in parallel.
+
+</details>
 
 ## Parallellisation
 
@@ -74,3 +97,19 @@ for (int j = 0; j < n; j++)
 **Claim:** if you can reverse a loop and get the same result as when
 the original loop, then the loop can be safely executed in parallel.
 Is this claim true?  If not, show a counterexample.
+
+<details>
+  <summary>Open this to see the answer</summary>
+
+The claim is **false**, because the different loop iterations might
+write to a shared local variable.
+
+```
+float x;
+for (int i = 0; i < n; i++) {
+  x = A[i];
+  B[i] = x;
+}
+```
+
+</details>
