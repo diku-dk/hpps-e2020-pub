@@ -1,4 +1,4 @@
-# Exercises in loop analysis, transformations, and acceleators
+# Exercises in loop analysis, transformations, and accelerators
 
 **Note:** _The solutions are not hidden on Internet Explorer/Edge_ as
 it does not support the feature used to hide them. Please use any
