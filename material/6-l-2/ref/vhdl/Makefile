@@ -1,6 +1,6 @@
 FLAGS=--std=93c --ieee=synopsys
 GHDL_DIR=../../ghdl
-GHDL=LD_LIBRARY_PATH=$(GHDL_DIR):$$LD_LIBRARY_PATH $(GHDL_DIR)/bin/ghdl
+GHDL=LD_LIBRARY_PATH=$(GHDL_DIR)/lib:$$LD_LIBRARY_PATH $(GHDL_DIR)/bin/ghdl
 VCD=$(GHDL_DIR)/bin/vcd-ubuntu-latest
 
 all: logic_gates_ex half_adder_ex full_adder_ex ripple_carry_adder_ex
