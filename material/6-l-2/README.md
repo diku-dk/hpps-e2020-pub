@@ -21,7 +21,7 @@ For each of the following tasks:
     2. Execute kernel
     3. Copy from device.
 
-**Note: as mentioned, you might not be able to beat optimized CPU implementations, such as Numpy, with a straightforward OpenCL implementation. In that case, it really depends on the available hardware.**
+**Note: as mentioned, you might not be able to beat optimized CPU implementations, such as Numpy, with a straightforward OpenCL implementation. In that case, it really depends on the available hardware. You should however easily beat a pure Python implementation.**
 
 ## 1. Vector addition
 
@@ -87,10 +87,41 @@ Inside the folder you can now test the GHDL installation, with something like:
 ```bash
 ./ghdl --version
 ```
-And you can test the example from the slides:
+
+And then update the `GHDL_DIR` variable in the `Makefile` and test that the reference `logic_gates` example works:
 ```bash
-make
+cd ref/vhdl
+make logic_gates_ex
 ```
-
-
-TBD
+Which should give the following output:
+```bash
+mkdir -p logic_gates/work
+LD_LIBRARY_PATH=../../ghdl/lib:$LD_LIBRARY_PATH ../../ghdl/bin/ghdl -a --std=93c --ieee=synopsys --workdir=logic_gates/work logic_gates/logic_gates.vhdl
+LD_LIBRARY_PATH=../../ghdl/lib:$LD_LIBRARY_PATH ../../ghdl/bin/ghdl -a --std=93c --ieee=synopsys --workdir=logic_gates/work logic_gates/logic_gates_tb.vhdl
+LD_LIBRARY_PATH=../../ghdl/lib:$LD_LIBRARY_PATH ../../ghdl/bin/ghdl -e --std=93c --ieee=synopsys --workdir=logic_gates/work logic_gates_tb
+LD_LIBRARY_PATH=../../ghdl/lib:$LD_LIBRARY_PATH ../../ghdl/bin/ghdl -r --std=93c --ieee=synopsys --workdir=logic_gates/work logic_gates_tb --vcd=logic_gates/trace.vcd
+../../ghdl/bin/vcd-ubuntu-latest logic_gates/trace.vcd -s=logic_gates_tb
+13 samples / Tue Jan  5 13:17:56 2021 / 1 fs
+┌── logic_gates_tb
+│                                a[ 1]: ____________╱▔▔▔▔▔▔▔▔▔▔▔▔▔
+│
+│                                b[ 1]: ________╱▔▔▔╲___╱▔▔▔▔▔▔▔▔▔
+│
+│                            c_and[ 1]: ____________________╱▔▔▔▔▔
+│
+│                             c_or[ 1]: ____________╱▔▔▔▔▔▔▔▔▔▔▔▔▔
+│
+│                            c_not[ 1]: ____╱▔▔▔▔▔▔▔▔▔▔▔╲_________
+│
+│                            c_xor[ 1]: ____________╱▔▔▔▔▔▔▔╲_____
+│
+│                              clk[ 1]: ▔▔╲_╱▔╲_╱▔╲_╱▔╲_╱▔╲_╱▔╲___
+│
+│                              rst[ 1]: ▔▔╲_______________________
+│
+│                      done_driver[ 1]: ________________╱▔▔▔▔▔▔▔▔▔
+│
+│                      done_tester[ 1]: ______________________╱▔▔▔
+│
+```
+**Note: the packaged `tar` folder also contains a binary (`vcd_ubuntu_latest`) for writing the ASCII waveform. If you choose to install GHDL locally or through docker, you would also need to download this binary: https://github.com/yne/vcd/releases and update the `VCD` variable in the `Makefile`**
