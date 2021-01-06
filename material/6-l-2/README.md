@@ -78,7 +78,7 @@ For ERDA, we have prepared all the tools such that you can set up a working envi
 
 ```bash
 cd ~/work
-curl -OL 'https://sid.erda.dk/share_redirect/GkfXNG21i1/ghdl.tar.bz2'
+curl -OL 'https://github.com/diku-dk/hpps-e2020-pub/raw/master/material/6-l-2/ghdl.tar.bz2'
 tar -xvf ghdl.tar.bz2
 cd ghdl
 ```
