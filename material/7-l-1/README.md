@@ -1,7 +1,7 @@
 # Trial exam lab
 
 For this lab we will spend the time trying to solve the theoretical part of an exam.
-The size and scope of the exam set is intended to be similar to the real exam.
+The size and scope of the exam set is intended to be similar to the real exam. But note that the exam will also contain a practical part similar to assignment #4.
 
 Since we only have 2x45 minutes for the lab and the exam is supposed to be 4 hours, we do not expect you to be able to answer all questions within the lab.
 
