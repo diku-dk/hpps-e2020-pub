@@ -24,7 +24,8 @@ for (int k = 0; k < 100; k++)
 
 The access to `A` has a RAW dependency with directions `[=, <, <]`
 
-This implies the outer loop can be executed in parallel.
+This implies the *outer* loop (`k`) and the *innermost* loop (`i`) can
+be executed in parallel.
 
 </details>
 
