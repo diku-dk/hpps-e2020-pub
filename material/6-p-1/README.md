@@ -45,7 +45,7 @@ for (int k = 0; k < 100; k++)
 
   * A RAW dependency with directions `[*, =, <]`.
 
-  * A WAR dependency with directions `[*, =, <]`
+  * A WAR dependency with directions `[*, =, >]`
 
 This implies that the middle loop can be executed in parallel.
 
