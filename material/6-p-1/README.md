@@ -168,7 +168,7 @@ What is the theoretical compute power of this GPGPU?
 
 </details>
 
-## Running time of a program on a GPGPU
+## Running time of a program on a CPU
 
 **Note:** For this question you should compute the optimal theoretic best speed, ignoring cache issues, datapath utilization etc.
 
