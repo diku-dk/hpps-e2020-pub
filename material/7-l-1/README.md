@@ -12,3 +12,8 @@ To get started, download the [exam set PDF](https://github.com/diku-dk/hpps-e202
 ## Example exam solution
 
 If you would like to compare your results to our solutions, you can use the [exam solution PDF](https://github.com/diku-dk/hpps-e2020-pub/raw/master/material/7-l-1/trial-exam-solutions.pdf) where we have filled in our own suggested solutions.
+
+## Changes
+
+* 2020-01-07: Changed wording around signed/unsiged part (set and solution)
+* 2020-01-09: Corrected errors in base-7 solutions.
