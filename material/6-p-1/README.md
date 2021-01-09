@@ -173,7 +173,7 @@ What is the theoretical compute power of this GPGPU?
 
 **Note:** For this question you should compute the optimal theoretic best speed, ignoring cache issues, datapath utilization etc.
 
-Given a program, which uses 8 GiB data (meaning 8 GiB read and 8 GiB write), a parallelizable loop with `16,384 iterations` containing `256 floating point operations`, how long time does it take to execute on a CPU with `64 cores`, running at `4,300 MHz` with `4 FLOPs` per instruction, with a memory bandwith of `102.4 GB/s`?
+Given a program, which uses 8 GiB data (meaning 8 GiB read and 8 GiB write), a parallelizable loop with `16,384 iterations` containing `256 floating point operations`, how long time does it take to execute on a CPU with `64 cores`, running at `4,300 MHz` with `4 FLOPs` per instruction, with a memory bandwith of `102.4 GiB/s`?
 
 
 <details>
@@ -195,7 +195,7 @@ Given a program, which uses 8 GiB data (meaning 8 GiB read and 8 GiB write), a p
 
 **Note:** For this question you should compute the optimal theoretic best speed, ignoring cache issues, datapath utilization etc.
 
-Given a program, which uses 8 GiB data (meaning 8 GiB read and 8 GiB write), a parallelizable loop with `16,384 iterations` containing `256 floating point operations`, how long time does it take to execute on a GPGPU with `10,496` cores, running at `1,695 MHz` with `2 FLOPs` per instruction, and a memory bandwith of `936.2 GB/s`?
+Given a program, which uses 8 GiB data (meaning 8 GiB read and 8 GiB write), a parallelizable loop with `16,384 iterations` containing `256 floating point operations`, how long time does it take to execute on a GPGPU with `10,496` cores, running at `1,695 MHz` with `2 FLOPs` per instruction, and a memory bandwith of `936.2 GiB/s`?
 
 <details>
   
