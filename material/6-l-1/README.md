@@ -188,7 +188,7 @@ with a `collapse` clause.
   }
   ```
 
-## Maximising parallelism with interchange loop distribution
+## Maximising parallelism with interchange and loop distribution
 
 In `batch_matrix_inverse()` we have a parallel loop over all the
 matrices, and in `gaussian_elimination()` we have more parallel loops.
@@ -210,16 +210,66 @@ so this is where the code will have to become uglier.
 * Test to make sure you didn't make any mistakes.
 
 Now you have a whole mess of loops that you can start restructuring
-radically.
+radically.  First, you will need to *distribute* the loop that
+*contains* the sequential `s` `for`-loop (with `steps` iterations),
+i.e.. your structure will be something like:
 
-* Why is it legal to *interchange* the outermost loop (the one with
-  `k` iterations) and the sequential `for`-loop?
+```
+for (int l = 0; l < k; l++) {
+  int m = 2*n;
+  ...
+  for (int i = 0; i < n; i++) {
+    ...
+  }
+  ...
+  for (int s = 0; s < steps; s++) {
+    ...
+  }
+  ...
+}
+```
+
+The `s`-loop should be distributed in such a way that you get this
+structure:
+
+```
+for (int l = 0; l < k; l++) {
+  int m = 2*n;
+  ...
+  for (int i = 0; i < n; i++) {
+    ...
+  }
+}
+...
+for (int l = 0; l < k; l++) {
+  for (int s = 0; s < steps; s++) {
+    ...
+  }
+}
+...
+for (int l = 0; l < k; l++) {
+  ...
+}
+```
+
+You will need to perform *memory expansion* on some of the variables
+produces by the (now) three loop nests.  Specifically, on `A`, `irow`,
+`r`, `pivot_idx`, and `f_copy`.
+
+Then:
+
+* Consider why it is legal to *interchange* the middle loop `l`-loop
+  and the sequential `s`-loop.
 
 * Interchange those two loops.
 
 * Test.
 
-Now you can apply loop distribution to form (multiple) perfect
-parallel loop nests.  You will end up with at least five, and you will
-need to apply memory expansion to the `A`, `irow`, `f`, `f_copy`, and
-`pivot_idx` variables.
+Now you can continue applying loop distribution to form (multiple)
+perfect parallel loop nests.  You will end up with at least five, and
+you will need to apply memory expansion to the `A`, `irow`, `f`,
+`f_copy`, and `pivot_idx` variables.
+
+This is **not** trivial stuff, so don't be disheartened if you find it
+difficult.  You will not be expected to do anything this difficult at
+the exam.

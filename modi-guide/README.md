@@ -66,7 +66,7 @@ time ./heat-equation ${2} ${3} ${4}
 
 This will serve as a script for running the executable where we can change the parameters as we want. To submit the very first job, we can run the `sbatch` command:
 ```bash
-> sbatch work.sh 1 1000 1000 1000
+> sbatch --exclusive work.sh 1 1000 1000 1000
 Submitted batch job 29249
 ```
 
@@ -86,8 +86,32 @@ HEIGHT=1000
 ROUNDS=1000
 
 for n in {1..64}; do
-  sbatch work.sh ${n} ${WIDTH} ${HEIGHT} ${ROUNDS}
+  sbatch --exclusive work.sh ${n} ${WIDTH} ${HEIGHT} ${ROUNDS}
 done
 ```
 
 This script will invoke `sbatch` 64 times, varying the 1st parameter, which the `work.sh` script uses for the number of threads. When you run the script, you will see a list of job-ids. You can then use `squeue` to see if they are finished. Once they are finished, you can pick out the results from the files and put them into your favorite graph creation format. You will notice that `work.sh` writes the input parameters, which will help you when you have 64+ output files and try to figure out which goes where.
+
+## Running long-running tasks
+
+If your experiment with larger workloads, you can experience that the jobs are killed after 15 minutes. This is caused by the default queue on MODI allowing only short tasks. To see what queues are available, use the `sinfo` command:
+
+```bash
+> sinfo
+
+PARTITION   AVAIL  TIMELIMIT  NODES  STATE NODELIST
+modi_devel*    up      15:00      5   idle modi[003-007]
+modi_devel*    up      15:00      3   down modi[000-002]
+modi_short     up 2-00:00:00      5   idle modi[003-007]
+modi_short     up 2-00:00:00      3   down modi[000-002]
+modi_long      up 7-00:00:00      5   idle modi[003-007]
+modi_long      up 7-00:00:00      3   down modi[000-002]
+modi_max       up 29-00:00:0      5   idle modi[003-007]
+modi_max       up 29-00:00:0      3   down modi[000-002]
+```
+
+You can see that `modi_short` allows tasks to run up to two hours. To run on another queue (aka partition) with Slurm, use the `--partition=` argument, like so:
+```bash
+> sbatch --partition=modi_short --exclusive work.sh 1 1000 1000 1000
+Submitted batch job 29249
+```
