@@ -67,7 +67,7 @@ N + (1-N) * 0.04*.
 
 1. *S(4) = 3.88*
 
-2. *S(128) = = 122.92*
+2. *S(128) = 122.92*
 
 3. *S(N) = 5*.  Solving for *N*, we get *N=31/6*, and since we cannot
    have a fractional number of processors, we round up to *N=6*.
@@ -122,5 +122,5 @@ optimally on a single processor.  Thus, we need to run *I_s* on system
 1 and *I_p* on system 2 and compare their performance.  Since the
 systems are different, we cannot use speedup-in-latency.  What we need
 to do is compute the *throughput* of the two programs, and then we can
-comput the speedup-in-throughput.
+compute the speedup-in-throughput.
 </details>

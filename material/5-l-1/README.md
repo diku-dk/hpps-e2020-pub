@@ -50,7 +50,7 @@ Summing: 0.083552s
 Result: -538100055
 ```
 
-The program contains internal instrumentation for measuring the how
+The program contains internal instrumentation for measuring how
 long it takes to read the file into memory and sum its contents.
 These two tasks are measured independently, because parallelisation
 will only help speed up the second part, and for this contrived
@@ -154,7 +154,7 @@ input the thread is responsible for processing.
 
 * An input of `n` elements can be split into `k` chunks of size
   `(n-k+1)/k` elements each (this is an arithmetic trick for dividing
-  *roundin up* with integers).  Note that the last chunk may go beyond
+  *rounding up* with integers).  Note that the last chunk may go beyond
   `n`, which you'll need to detect as a special case.
 
 * Suppose `chunk_size = (size-num_threads+1)/num_threads`, then thread

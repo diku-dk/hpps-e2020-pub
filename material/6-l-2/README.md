@@ -1,4 +1,4 @@
-# Working with accellerators
+# Working with accelerators
 
 The prerequisite for this lab is:
   * [Video 12](https://sid.erda.dk/share_redirect/bGBNXHzM4g/12%20-%20Accelerators.mp4) ([slides for video 12](https://github.com/diku-dk/hpps-e2020-pub/raw/master/material/6-l-2/12%20-%20Accelerators.pdf))
@@ -15,7 +15,7 @@ For each of the following tasks:
   - When comparing floating point numbers, remember not to do a direct comparison (`result == expected`), but rather look at the difference (`result - expected < threshold`).
 - Time the reference implementation against your OpenCL implementation. Is it faster or slower? What if you modify the problem size?
   - When timing OpenCL, remember to call `finish()` on the queue, otherwise you will be timing scheduling each operation.
-- Try to time the copying to/from the device and the device execution seperately. Is the time dominated by copying or by execution? What if you modify the problem size?
+- Try to time the copying to/from the device and the device execution separately. Is the time dominated by copying or by execution? What if you modify the problem size?
   - Again, remember to call `finish()` on the queue after each step:
     1. Copy to device
     2. Execute kernel
@@ -34,7 +34,7 @@ where `a` and `b` are vectors of size `n`.
 
 ## 2. Matrix multiplication
 
-This is one of the tasks GPUs excell at. While the naive GPU implementation won't beat an optimized CPU implementation, an optimized GPU implementation beats any CPU implementation. In pseudo Python, the naive implementation is as follows:
+This is one of the tasks GPUs excel at. While the naive GPU implementation won't beat an optimized CPU implementation, an optimized GPU implementation beats any CPU implementation. In pseudo Python, the naive implementation is as follows:
 ```python
 for i in range(N):
     for j in range(M):
@@ -70,7 +70,7 @@ where `img` is an `N` by `M` matrix, `result` is an `N` by `M` matrix and `K` is
 
 # Working with VHDL
 
-To get started with VHDL and hardware based accellerators you can try to implement a working [ripple-carry adder](https://en.wikipedia.org/wiki/Adder_(electronics)#Ripple-carry_adder), as we presented in the first video. Hint: you could try to implement a half adder and a full adder individually. It is up to you if you want to implement them with or without registers, i.e. whether they are guarded by a clock signal.
+To get started with VHDL and hardware based accelerators you can try to implement a working [ripple-carry adder](https://en.wikipedia.org/wiki/Adder_(electronics)#Ripple-carry_adder), as we presented in the first video. Hint: you could try to implement a half adder and a full adder individually. It is up to you if you want to implement them with or without registers, i.e. whether they are guarded by a clock signal.
 
 However, the tools are a bit difficult to get working, so you might want to either use the [GHDL Docker image](https://hub.docker.com/r/ghdl/ghdl) or try it on [ERDA/DAG](https://github.com/diku-dk/hpps-e2020-pub/blob/master/ERDA.md#data-analysis-gateway-dag).
 
