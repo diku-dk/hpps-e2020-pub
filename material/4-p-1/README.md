@@ -4,7 +4,7 @@ This page contains the exercise problems related to computer networks for week 4
 
 **Note:** _The solutions are not hidden on Internet Explorer/Edge_ as it does not support the feature used to hide them. Please use any other browser, or avoid scrolling into the solution.
 
-## Bandwith, round-trip-time, and lantency
+## Bandwidth, round-trip-time, and latency
 
 The bandwidth and latency are two related, yet very different, concepts and are often a source of confusion.
 
@@ -12,7 +12,7 @@ For the questions below we will assume that signals propagate with **300,000,000
 
 ### Latency as a function of distance
 
-Two hosts are communicating over an optic cable and are placed 800 km apart. Calculate the time it takes to for a bit to be transfered from one host to the other.
+Two hosts are communicating over an optic cable and are placed 800 km apart. Calculate the time it takes to for a bit to be transferred from one host to the other.
 <details>
   <summary>Open this to see the answer</summary>
 
@@ -40,7 +40,7 @@ Using the `ping` tool you measure the RTT from your machine to a remote host to 
   
 </details>
 
-### Latency effects on bandwith
+### Latency effects on bandwidth
 
 Your network supports sending packages that are at most 1500 bytes long. You measure the RTT to be 20 ms. The machines use a simple protocol that sends a package, and waits for an acknowledgement before sending the next package. How many bytes can you send per second?
 
@@ -337,7 +337,7 @@ The domain name system is both an application using the internet to function, as
 
 ### Looking up an address
 
-Assume that all DNS servers have just rebooted and you are the first person making a lookup (i.e. no responses are cached). You try to resolve the domain `www.diku.dk` from your laptop. Describe what requests and responses would be exchanged.
+Assume that all DNS servers have just rebooted, and you are the first person making a lookup (i.e. no responses are cached). You try to resolve the domain `www.diku.dk` from your laptop. Describe what requests and responses would be exchanged.
 
 <details>
   <summary>Open this to see the answer</summary>
@@ -346,7 +346,7 @@ Assume that all DNS servers have just rebooted and you are the first person maki
 2. ISP DNS sends request for `.dk` to root DNS
 3. ISP DNS receives server `1.1.1.1` as the `.dk` server
 4. ISP DNS sends request for `diku.dk` to `1.1.1.1`
-5. ISP DNS recieves `2.2.2.2` as the `diku.dk` server
+5. ISP DNS receives `2.2.2.2` as the `diku.dk` server
 6. ISP DNS sends request for `www.diku.dk` to `2.2.2.2`
 7. ISP DNS receives response `3.3.3.3` as `www.diku.dk`
 8. Laptop receives `3.3.3.3` as `www.diku.dk`
@@ -355,14 +355,14 @@ Assume that all DNS servers have just rebooted and you are the first person maki
 
 ### Looking up a second address
 
-Assume that the previous request succeeded, and the name servers have cached reponses. Describe the exchanges that occur when attempting to resolve `di.ku.dk`.
+Assume that the previous request succeeded, and the name servers have cached responses. Describe the exchanges that occur when attempting to resolve `di.ku.dk`.
 
 <details>
   <summary>Open this to see the answer</summary>
 
 1. Laptop sends request for `di.ku.dk` to ISP DNS server
 2. ISP DNS sends request for `ku.dk` to `1.1.1.1` (cached `.dk` server)
-5. ISP DNS recieves `4.4.4.4` as the `ku.dk` server
+5. ISP DNS receives `4.4.4.4` as the `ku.dk` server
 6. ISP DNS sends request for `di.ku.dk` to `4.4.4.4`
 7. ISP DNS receives response `5.5.5.5` as `di.ku.dk`
 8. Laptop receives `5.5.5.5` as `di.ku.dk`

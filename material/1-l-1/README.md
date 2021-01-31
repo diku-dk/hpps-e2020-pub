@@ -18,7 +18,7 @@ Most subsequent labs will be directly focused on
 exercising the concepts used in the *mandatory assignments*.  Each lab
 consists of tasks listed in a document, like this one.  Lab work is
 not *mandatory*, and you do not submit it anywhere (but you are
-encouraged to ask for feedback!), but you cannot expected to pass the
+encouraged to ask for feedback!), but you cannot expect to pass the
 course without active participation in the labs.
 
 

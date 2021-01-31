@@ -16,7 +16,7 @@ assignment, as everything here is directly relevant.
   before moving on.
 
 You should consider writing and extending a `Makefile` during your
-work, as you will be creating several different files for htis lab.
+work, as you will be creating several different files for this lab.
 The code handout contains the start of one that you can extend as
 needed.
 
@@ -286,7 +286,7 @@ Write a program `sortindexes.c` that can be run as
 $ ./sortindexes input.points input.indexes c
 ```
 
-and which then sorts *within* each index row by comparing the `c`th
+And which then sorts *within* each index row by comparing the `c`th
 coordinate of their corresponding point, then prints the newly sorted
 index rows.  The order of the rows themselves is unchanged.  You may
 assume that the indexes file is valid with respect to the given points

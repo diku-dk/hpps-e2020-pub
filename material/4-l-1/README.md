@@ -17,9 +17,9 @@ If you are using macOS, the tools are installed by default. On Windows (without 
 
 ## Warning!
 
-The tools use publicly available services that have entirely legitimate uses for professionals working with internet infrastructure, but some organizations consider probing their networks as a hostile activity. 
+The tools use publicly available services that have entirely legitimate uses for professionals working with internet infrastructure, but some organizations consider probing their networks as a hostile activity.
 
-Please take this into consideration and try to keep your experiements running for only a short period.
+Please take this into consideration and try to keep your experiments running for only a short period.
 
 ## The ping command
 
@@ -120,7 +120,7 @@ traceroute to google.com (172.217.20.46), 64 hops max, 52 byte packets
     108.170.254.33 (108.170.254.33)  23.426 ms  23.946 ms
 ```
 
-In this example you can see that router-hop #6 did not respond, but the hosts afterwards did. 
+In this example you can see that router-hop #6 did not respond, but the hosts afterwards did.
 
 We can also investigate that from #3 to #4 we get an additional 10ms latency. While there is no agreed upon naming convention, we can guess that #3 is a TDC (now Yousee) owned router in Denmark. We can also make a guess that #4 is also TDC owned router, but in Sweden, explaining the latency we see.
 
@@ -247,11 +247,11 @@ If you do not have `dig` on your system you can try an [online NSLookup tool](ht
 
 ## Locating a host based on IP
 
-There is no real map of where each IP address is located in the world, but many ISP report this information, as it is useful for trafic optimization. 
+There is no real map of where each IP address is located in the world, but many ISP report this information, as it is useful for traffic optimization.
 
 You can use an IP location tool to figure out where in the world a given IP is located, [but do note that the IP lookup information is not accurate and can be outdated](https://www.theguardian.com/technology/2016/aug/09/maxmind-mapping-lawsuit-kansas-farm-ip-address).
 
-Try to visit an [IP location tool](https://whatismyipaddress.com) and perform a lookup. 
+Try to visit an [IP location tool](https://whatismyipaddress.com) and perform a lookup.
 
 Once you enter the website, you will notice that the reported IP address is _not_ the same as the first hop from the `traceroute` tool above. The reason for this is a [NAT](https://en.wikipedia.org/wiki/Network_address_translation) enabled router that hides your IP on the internal network.
 
@@ -259,10 +259,10 @@ Try to go back and look at one of your `traceroute` results, and try to locate s
 
 ## A final word on DNS
 
-You might have noticed that some of the traces you tried report hostnames, while others report just an IP. The cause of this is an feature called [Reverse DNS](https://en.wikipedia.org/wiki/Reverse_DNS_lookup) which assigns a single hostname to an IP. This breaks with the many-to-many approach used elsewhere in the DNS system, but has a few special use cases.
+You might have noticed that some of the traces you tried report hostnames, while others report just an IP. The cause of this is a feature called [Reverse DNS](https://en.wikipedia.org/wiki/Reverse_DNS_lookup) which assigns a single hostname to an IP. This breaks with the many-to-many approach used elsewhere in the DNS system, but has a few special use cases.
 
 ## Going deeper (optional)
 
-A tool for investigating all the details involved in network trafic is a tool such as [Wireshark](https://www.wireshark.org/). It is a bit intrusive to install, so I would only recomend it if you are curious to see what happens. Wireshark is capable of reading every network package handled by your network card, and allows you to investigate features such as TCP sequence numbers, package errors, retransmits, ping messages and many more.
+A tool for investigating all the details involved in network traffic is a tool such as [Wireshark](https://www.wireshark.org/). It is a bit intrusive to install, so I would only recomend it if you are curious to see what happens. Wireshark is capable of reading every network package handled by your network card, and allows you to investigate features such as TCP sequence numbers, package errors, retransmits, ping messages and many more.
 
 If you want to get a taste of what these raw packet tools can display, there is a brief [Wireshark guide with pictures](https://www.howtogeek.com/104278/how-to-use-wireshark-to-capture-filter-and-inspect-packets/).

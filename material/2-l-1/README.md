@@ -111,7 +111,7 @@ prints, separated by newlines, the numbers from [ints.bin](ints.bin).
   at a time (the `size` parameter accepted by `fread()`).
 
 * The return value of `fread()` indicates how many elements were
-  succesfully read (and you should read one element in `read_int()`).
+  successfully read (and you should read one element in `read_int()`).
 
 ## Converting ASCII integers to binary integers
 
@@ -141,7 +141,7 @@ integer.
 #### Hints
 
 * The `read_ascii_int()` function is a *parser*, because it translates
-  unstructed text data to structured in-memory data.  Parsers are in
+  unstructured text data to structured in-memory data.  Parsers are in
   general tricky to write well (and beyond the scope of our course),
   but the algorithm for reading a base-10 integer is fairly
   straightforward:

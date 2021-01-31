@@ -31,7 +31,7 @@ If you get stuck, there is a reference solution in the [ref](./ref/) folder.
 
 As before, look in the [src](./src/) folder and find a template file called [`zmqsubscriber.py`](./src/zmqsubscriber.py). The file contains support code for computing the [exponential weighted moving average, EWMA](https://en.wikipedia.org/wiki/Moving_average#Exponential_moving_average) for the a value. The EWMA algorithm that is used on stock pricing is actually the same algorithm that is used to compute the expected RTT for a TCP package when deciding what timeout values to apply.
 
-By applying two diffent EWMA decays for a signal we can observe the [moving average convergence](https://en.wikipedia.org/wiki/MACD), which can be interpreted as a signal indicating if the price is currently increasing or decreasing.
+By applying two different EWMA decays for a signal we can observe the [moving average convergence](https://en.wikipedia.org/wiki/MACD), which can be interpreted as a signal indicating if the price is currently increasing or decreasing.
 
 The code for performing this calculation is included in the template file, and you need to fill in the code that is required to read the data being sent by the server you wrote in the previous task.
 
@@ -39,7 +39,7 @@ Again, the file contains two areas marked with **TODO** where you need to fill i
 
 If you get stuck, there is a reference solution in the [ref](./ref/) folder.
 
-When you are ready to test the solution, you need at least two terminals (or IDEs) running. One terminal will run the publisher and the other terminal(s) will run the subscriber. Try starting and stopping multiple subscribers and notice that the underlying connection handling is fully hidden from the publisher code.
+When you are ready to test the solution, you need at least two terminals (or IDEs) running. One terminal will run the publisher, and the other terminal(s) will run the subscriber. Try starting and stopping multiple subscribers and notice that the underlying connection handling is fully hidden from the publisher code.
 
 ## Working with sockets
 

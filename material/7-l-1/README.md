@@ -15,6 +15,6 @@ If you would like to compare your results to our solutions, you can use the [exa
 
 ## Changes
 
-* 2021-01-07: Changed wording around signed/unsiged part (set and solution)
+* 2021-01-07: Changed wording around signed/unsigned part (set and solution)
 * 2021-01-09: Corrected errors in base-7 solutions.
 * 2021-01-25: Elaborated example solutions for `1.2.1` and `2.2.2`.

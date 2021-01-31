@@ -186,7 +186,7 @@ Given a program, which uses 8 GiB data (meaning 8 GiB read and 8 GiB write), a p
 * One cycle takes `1000 / 4300 = 0.2326 ns`
 * One iteration takes `64 * 0.2326 = 14.8864 ns`
 * The computation takes `256 * 14.8864 = 3810.9184 ns`
-* The program taes a total of `memory + compute + memory` giving `781,000 + 3.8110 us + 781,000 us = 1,562,003.811 us` or `1.562 s`
+* The program takes a total of `memory + compute + memory` giving `781,000 + 3.8110 us + 781,000 us = 1,562,003.811 us` or `1.562 s`
 
   
 </details>
